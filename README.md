@@ -4,12 +4,13 @@ This repository contains a collection of practical examples and tutorials for em
 
 ## Overview
 
-Embedded C is a specialized version of the C programming language used for programming microcontrollers and embedded systems. This collection provides hands-on examples covering fundamental concepts and common patterns used in embedded systems development.
+Embedded C is a specialized version of the C programming language used for programming microcontrollers and embedded systems.
 
 ## Contents
 
 - Basic C syntax and concepts
 - Microcontroller programming
+- ADC function
 - Hardware interfacing
 - Memory management
 - Interrupts and timers
