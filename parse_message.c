@@ -1,5 +1,5 @@
 /*
- * protocol.c  -  compact sensor-protocol parser
+ * parse_message.c  -  compact protocol parser
  *   Frame: AA | COUNT | CMD | LEN | DATA[LEN] | CRC8 | 55
  *   CRC-8/MAXIM-DOW over COUNT..last DATA byte; valid when crc^provided==0.
  */
