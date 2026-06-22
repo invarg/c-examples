@@ -6,6 +6,7 @@
 #include <stdint.h>
 #include <stddef.h>
 #include <string.h>
+#include <stdio.h>
 
 #define HEADER  0xAAu
 #define TRAILER 0x55u
@@ -83,8 +84,6 @@ pr_t stream_push(stream_t *s, uint8_t c, msg_t *out)
     }
 }
 
-#ifdef PROTO_DEMO
-#include <stdio.h>
 static const uint8_t M1[] = {0xAA,0x21,0x30,0x04,0xDE,0xAD,0xBE,0xEF,0xA4,0x55};
 static const uint8_t M2[] = {0xAA,0x22,0x31,0x01,0x7F,0x7F,0x55};
 static const uint8_t M3[] = {0xAA,0x23,0x32,0x03,0x10,0x20,0x30,0x00,0x55}; /* CRC should be 0x55 -> bad on purpose */
@@ -121,4 +120,3 @@ int main(void)
         }
     return 0;
 }
-#endif
